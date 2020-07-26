@@ -1,0 +1,48 @@
+{
+  "name": "react-redefined",
+  "version": "0.0.1",
+  "description": "function for overriding existing classes, functions and variables, may be used as decorator",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "test_ts": "jest --config='jest.config.ts.js'",
+    "build": "babel src --out-dir lib",
+    "clear": "rimraf lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letlui/react-redefinable.git"
+  },
+  "author": "Denis Makarov ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/letlui/react-redefinable/issues"
+  },
+  "homepage": "https://github.com/letlui/react-redefinable#readme",
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/cli": "7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.4",
+    "babel-plugin-transform-decorators-legacy": "1.3.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "@jest/globals": "26.1.0",
+    "babel-jest": "26.1.0",
+    "enzyme": "3.11.0",
+    "jest": "26.1.0",
+    "ts-jest": "26.1.3",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "tslib": "2.0.0",
+    "@types/react": "16.9.43",
+    "typescript": "3.9.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "3.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

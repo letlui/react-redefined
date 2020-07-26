@@ -1,0 +1,4 @@
+/node-modules
+/lib
+/demo
+.package-lock.json

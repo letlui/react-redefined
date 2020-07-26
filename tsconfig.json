@@ -1,0 +1,32 @@
+{
+  "compileOnSave": true,
+
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "allowJs": true,
+    "strictNullChecks": false,
+    "declaration": true,
+    "sourceMap": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "es2015",
+      "es2017",
+      "dom"
+    ],
+    "noErrorTruncation": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "*"
+  ],
+  "files": [
+    "./src/test/redefined.test.ts"
+  ]
+}
