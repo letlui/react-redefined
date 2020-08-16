@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 140,
+        "ignoreComments": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "require-jsdoc": "off",
+    "prefer-rest-params": "off",
+    "no-invalid-this": "off",
+    "new-cap": "off",
+    "no-undef": "off"
+  }
+}
