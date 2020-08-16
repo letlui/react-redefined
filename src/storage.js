@@ -1,29 +1,28 @@
 class OverrideStorage {
-    overrides = new Map();
+    overridesMap = new Map();
 
-    getOverride (id) {
-        debugger
-        return this.overrides.get(id);
+    getOverride(id) {
+      return this.overridesMap.get(id);
     }
 
-    registerOverride (id, override) {
-        if (this.overrides.has(id)) {
-            warn(`extension with same id '${id}' already exists and will be overridden`)
-        }
+    registerOverride(id, override) {
+      if (this.overridesMap.has(id)) {
+        warn(`extension with same id '${id}' already exists and will be overridden`);
+      }
 
-        const extension = {
-            value: override
-        }
+      const extension = {
+        value: override,
+      };
 
-        this.overrides.set(id, extension);
+      this.overridesMap.set(id, extension);
     }
 
-    clearOverrides () {
-        this.overrides = new Map();
+    clearOverrides() {
+      this.overridesMap = new Map();
     }
 
-    removeOverride (id) {
-        this.overrides.delete(id)
+    removeOverride(id) {
+      this.overridesMap.delete(id);
     }
 }
 
