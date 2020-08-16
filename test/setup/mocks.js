@@ -1,4 +1,4 @@
-import {redefined} from "../../src";
+import {redefined} from '../../src';
 
 @redefined('testClass')
 class ClassOverrideOriginal {
@@ -12,26 +12,26 @@ class ClassOverride {
 }
 
 class FunctionOverride {
-    constructor(firstName, lastName) {
-        this.firstName = firstName
-        this.lastName = lastName
-    }
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 
     @redefined('getName')
-    getName () {
-        return this.firstName
-    }
+  getName() {
+    return this.firstName;
+  }
 }
 
 class FieldFunctionOverride {
-    constructor(firstName, lastName) {
-        this.firstName = firstName
-        this.lastName = lastName
-    }
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 
     @redefined('fullName')
     fullName = (separator) => {
-        return this.firstName + this.lastName
+      return this.firstName + this.lastName;
     }
 }
 
@@ -39,8 +39,7 @@ class FieldSet {
     @redefined('firstName')
     firstName = 'Rick'
 
-    constructor(firstName, lastName) {
-        this.lastName = lastName
+    constructor() {
     }
 }
 
@@ -49,7 +48,7 @@ class FieldOverride {
     firstName
 
     constructor(firstName, lastName) {
-        this.lastName = lastName
+      this.lastName = lastName;
     }
 }
 
@@ -58,16 +57,16 @@ class ConstructorFieldOverride {
     firstName
 
     constructor(firstName, lastName) {
-        this.firstName = firstName
-        this.lastName = lastName
+      this.firstName = firstName;
+      this.lastName = lastName;
     }
 }
 
 export {ClassOverrideOriginal,
-    ClassOverride,
-    FunctionOverride,
-    FieldFunctionOverride,
-    FieldSet,
-    FieldOverride,
-    ConstructorFieldOverride
-}
+  ClassOverride,
+  FunctionOverride,
+  FieldFunctionOverride,
+  FieldSet,
+  FieldOverride,
+  ConstructorFieldOverride,
+};

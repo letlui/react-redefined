@@ -1,6 +1,6 @@
 module.exports = {
-    projects: [
-        "jest.config.babel.js",
-        "jest.config.ts.js"
-    ],
+  projects: [
+    'test/jest.config.babel.js',
+    'test/jest.config.ts.js',
+  ],
 };
